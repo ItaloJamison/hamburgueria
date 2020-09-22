@@ -1,3 +1,8 @@
 package br.digital.house.hamburgueria
 
-data class Produto(val preco:Float, val nome:String)
+open class Produto(var preco:Float, var nome:String) {
+
+    fun capturaPreco (): Float {
+        return preco * 2
+    }
+}
